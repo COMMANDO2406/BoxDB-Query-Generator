@@ -23,9 +23,27 @@ html {
   background-color: #444;
   color: rgb(185, 245, 179);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
+  flex-direction: column;
+  font-size: auto;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #555;
+}
+
+button {
+  padding: 10px;
+  background-color: #888;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777;
 }
 
 .draggable-table {
@@ -34,4 +52,15 @@ html {
   background-color: aliceblue;
   position: absolute;
   cursor: move;
+}
+
+textarea {
+  flex-grow: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  resize: none;
+  font-size: 16px;
 }
