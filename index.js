@@ -3,14 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const refreshText = document.getElementById("RefreshText");
   const draggableArea = document.querySelector(".draggable-area");
   const textArea = document.getElementById("textArea");
+  const UpdateCredentialsBtn = document.getElementById("credentials");
 
   let tableCount = 0;
 
-  function refresh_Text() {
-    textArea.value = "test - this is where queries will go";
-  }
-
   refreshText.addEventListener("click", refresh_Text);
+  UpdateCredentialsBtn.addEventListener("click", credentialsUpdate);
   createTableBtn.addEventListener("click", () => {
     tableCount = tableCount + 1;
     createTable(draggableArea, tableCount);
