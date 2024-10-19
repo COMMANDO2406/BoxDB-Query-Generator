@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const draggableArea = document.querySelector(".draggable-area");
   const textArea = document.getElementById("textArea");
   const UpdateCredentialsBtn = document.getElementById("credentials");
+  const clearTextBtn = document.getElementById("clear-text");
 
   let tableCount = 0;
 
@@ -12,5 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
   createTableBtn.addEventListener("click", () => {
     tableCount = tableCount + 1;
     createTable(draggableArea, tableCount);
+  });
+  clearTextBtn.addEventListener("click", () => {
+    textArea.value = "";
   });
 });
