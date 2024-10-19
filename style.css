@@ -47,7 +47,7 @@ button:hover {
 }
 
 .draggable-table {
-  width: 100px;
+  width: auto;
   height: 100px;
   background-color: aliceblue;
   position: absolute;
@@ -67,35 +67,48 @@ textarea {
 
 .draggable-table {
   border: 1px solid #333;
+  background-color: #444;
+  color: white;
   margin: 10px;
   width: auto;
   height: auto;
+  text-align: center;
   overflow: hidden;
   flex-direction: column;
+  border-radius: 5px;
+}
+
+.table-title {
+  background-color: white;
+  color: black;
+  font-size: large;
 }
 
 .table-header {
   display: flex;
-  background-color: #444;
   color: white;
+  text-decoration: solid;
 }
 
 .header-cell {
   flex: 1;
-  padding: 10px;
+  padding: 5px;
+  background-color: #333;
   border: 1px solid #333;
+  font-size: medium;
   text-align: center;
-  height: 40px;
+  height: auto;
 }
 
 .text-area-container {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
+  border: 1px solid whitesmoke;
 }
 
 .text-area {
-  width: 100%;
-  height: 100px;
+  width: auto;
+  height: auto;
   box-sizing: border-box;
 }
