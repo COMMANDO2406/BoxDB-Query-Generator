@@ -47,7 +47,7 @@ button:hover {
 }
 
 .draggable-table {
-  width: 100px;
+  width: auto;
   height: 100px;
   background-color: aliceblue;
   position: absolute;
@@ -77,6 +77,12 @@ textarea {
   flex-direction: column;
 }
 
+.table-title {
+  background-color: white;
+  color: black;
+  font-size: large;
+}
+
 .table-header {
   display: flex;
   color: white;
@@ -87,8 +93,8 @@ textarea {
   flex: 1;
   padding: 5px;
   background-color: #333;
-
-  border: 1px solid whitesmoke;
+  border: 1px solid #333;
+  font-size: medium;
   text-align: center;
   height: auto;
 }
