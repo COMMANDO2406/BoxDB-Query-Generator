@@ -1,5 +1,17 @@
 function credentialsUpdate() {
   const textArea = document.getElementById("textArea");
+
+  const user = localStorage.getItem("user");
+  const password = localStorage.getItem("password");
+  const host = localStorage.getItem("host");
+  const database = localStorage.getItem("database");
+
+  if (user && password && host && database) {
+    textArea.value = `Credentials \nUser: ${user}\nPassword: ${password}\nHost: ${host}\nDatabase: ${database}`;
+  } else {
+    console.log("No credentials found in localStorage.");
+  }
+
   const credentials = prompt(
     "Enter credentials in format: USER PASSWORD HOST DATABASE"
   );
